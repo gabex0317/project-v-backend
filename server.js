@@ -8,6 +8,9 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Configurar trust proxy para Railway
+app.set('trust proxy', true);
+
 // Middleware de segurança
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" }
@@ -100,7 +103,7 @@ app.post('/api/transcribe', upload.single('audio'), async (req, res) => {
       filename: 'audio.webm',
       contentType: req.file.mimetype
     });
-    formData.append('model', 'gpt-4o-audio-preview');
+    formData.append('model', 'whisper-1');
     formData.append('language', 'pt');
     formData.append('response_format', 'text');
 
