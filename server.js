@@ -68,7 +68,7 @@ if (!process.env.OPENAI_API_KEY) {
 app.get('/', (req, res) => {
   res.json({
     status: 'online',
-    service: 'Project V Backend',
+    service: "Note It! Backend",
     version: '1.0.0',
     powered_by: 'GPT-4o Transcribe',
     endpoints: {
@@ -244,7 +244,7 @@ app.use((error, req, res, next) => {
 
 // Iniciar servidor
 app.listen(PORT, '0.0.0.0', () => {
-  console.log('🚀 Project V Backend iniciado!');
+  console.log('🚀 Note It! Backend iniciado!');
   console.log(`📡 Servidor rodando em: http://localhost:${PORT}`);
   console.log(`🔑 OpenAI API Key: ${process.env.OPENAI_API_KEY ? '✅ Configurada' : '❌ Não configurada'}`);
   console.log('📋 Endpoints disponíveis:');

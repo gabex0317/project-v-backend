@@ -1,7 +1,7 @@
 {
-  "name": "project-v-backend",
+  "name": "note-it-backend",
   "version": "1.0.0",
-  "description": "Backend seguro para Project V - Transcrição com GPT-4o",
+  "description": "Backend seguro para Note It! - Transforme conversas em conhecimento",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,11 +9,12 @@
   },
   "keywords": [
     "transcription",
-    "openai",
-    "gpt-4o",
-    "audio"
+    "note-taking",
+    "ai",
+    "audio",
+    "whisper"
   ],
-  "author": "Project V Team",
+  "author": "Note It! Team",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
